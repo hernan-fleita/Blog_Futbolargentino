@@ -1,0 +1,18 @@
+{% extends "Appdivsion1/padre.html" %} 
+
+{% load static %}
+
+{% block titulo_de_pagina %}
+<h1>BUSCAMOS POR BOCA</h1>
+
+
+<form action="{% url 'buscarboca' %}" method="GET"> {% csrf_token %}
+
+<p>GOLES:<input type="number" name="goles", id="goles"> </p>
+
+
+<input type="submit", value="Buscar">
+</form>
+
+<h2> {{ mensaje }} </h2>
+{% endblock %}

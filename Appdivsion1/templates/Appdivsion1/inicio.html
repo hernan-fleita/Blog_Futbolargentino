@@ -1,0 +1,12 @@
+{% extends "Appdivsion1/padre.html" %}
+
+{% load static %}
+
+{% block titulo_de_pagina %}
+<h1 class="mb-5"> ESTE TITULO VIENE DE INCIO </h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+<h1 class="mb-5"> ESTE CONTENIDO CAMBIO</h1>
+<h2>{{ mensaje }}</h2>
+{% endblock %}
